@@ -1,5 +1,64 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Olivier Chan's Personal Website</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<style>
+.background{
+    position:fixed;
+    background-color:#ffffff; 
+    height:100%; 
+    width:100%; 
+    top:0; 
+    left:0;
+}
+.bluestripe{
+    position:fixed;
+    background-color:#00c8ff;
+    width:250px; 
+    height:187px; 
+    left:50%; 
+    margin-left:-600px;
+    margin-top:400px;
+}
+.greenstripe{
+    position:fixed;
+    background-color=#00c858;
+    width:300px;
+    height:246px;
+    left:50%;
+    margin-left:400px;
+    margin-top:500px;
+}
+.main{
+    position:fixed;
+    background-color:#ffffff; 
+    height:100%; 
+    width:100%; 
+    top:0; 
+    left:0;
+}
+</style>
+<script>
+$(document).ready(function()
+{
+    $(window).bind('scroll',function(e)
+    {
+        parallaxScroll();
+    });
+ 
+    function parallaxScroll()
+    {
+        var scrolledY = $(window).scrollTop();
+        $('.background').css('background-position','center -'+((scrolledY*0.2))+'px');
+        $('.bluestripe').css('top','-'+((scrolledY*0.5))+'px');
+        $('.greenstripe').css('top','-'+((scrolledY*0.8))+'px');
+    }
+ 
+});
+</script>
+
+</head>
 <body>
 <div class="background"></div>
 <div class="bluestripe"></div>
