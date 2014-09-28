@@ -1,103 +1,112 @@
+<!DOCTYPE HTML>
 <html>
-<head>
-<title>Olivier Chan's Personal Website</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="./css/style.css">
-</head>
-<body>
 
-<h1>Don't Overthink It Grids <em>(while we wait for flexbox!)</em></h1>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="./css/grid.css" />
+	</head>
 
-<div class="grid">
-   <div class="col-2-3">
-     <div class="module">
-       <h3>2/3</h3>
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>	
-     </div>
-   </div>
-   <div class="col-1-3">
-     <div class="module">
-     		<h3>1/3</h3>
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies</p>	
-     </div>
-   </div>
+	<body>
+<!-- 1st row vertically centered text in the square columns -->
+<div class="grid-container">
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <ul>This demo shows you can center multiple types of content :
+                    <li>Text</li>
+                    <li>Images</li>
+                    <li>Lists</li>
+                    <li>... (you can also do it with forms)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell numbers">
+                    98%
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell numbers">               
+                3.9/5
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="grid grid-pad">
-   <div class="col-2-3">
-     <div class="module">
-     		<h3>2/3 (Opt-in Outside Padding)</h3>
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>	
-     </div>
-   </div>
-   <div class="col-1-3">
-     <div class="module">
-     		<h3>1/3</h3>
-				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam.</p>	
-     </div>
-   </div>
+<!-- 2nd row verticaly centered images in square columns -->
+
+<div class="square">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <img class="rs" src=""/>
+                Responsive image.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+               <img class="rs" src=""/>
+                Responsive image.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                <img class="rs" src="./img/test.png"/>
+                Responsive image.
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="grid grid-pad">
-   <div class="col-1-8">
-     <div class="module">
-     		<h3>1/8</h3>
-     </div>
-   </div>
-   <div class="col-1-8">
-     <div class="module">
-     		<h3>1/8</h3>
-     </div>
-   </div>
-  <div class="col-1-8">
-     <div class="module">
-     		<h3>1/8</h3>
-     </div>
-   </div>
-  <div class="col-1-8">
-     <div class="module">
-     		<h3>1/8</h3>
-     </div>
-   </div>
-  <div class="col-1-8">
-     <div class="module">
-     		<h3>1/8</h3>
-     </div>
-   </div>
-  <div class="col-1-8">
-     <div class="module">
-     		<h3>1/8</h3>
-     </div>
-   </div>
-  <div class="col-1-8">
-     <div class="module">
-     		<h3>1/8</h3>
-     </div>
-   </div>
-  <div class="col-1-8">
-     <div class="module">
-     		<h3>1/8</h3>
-     </div>
-   </div>
-</div>
+<!-- 3rd row responsive images in background with centered content -->
 
-<div class="grid grid-pad">
-   <div class="col-1-4">
-     <div class="module">
-     		<h3>1/4</h3>
-     </div>
-   </div>
-   <div class="col-1-2">
-     <div class="module">
-     		<h3>1/2</h3>
-     </div>
-   </div>
-  <div class="col-1-4">
-     <div class="module">
-     		<h3>1/4</h3>
-     </div>
-   </div>
+<div class="square bg img1">
+   <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                Centered responsive images as background with centered content over it.
+            </div>
+        </div>
+    </div>
 </div>
+<div class="square bg img2">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                Again
+            </div>
+        </div>
+    </div>
+</div>
+<div class="square bg img3">
+    <div class="content">
+        <div class="table">
+            <div class="table-cell">
+                And again
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END OF LAYOUT -->
+</div>
+	</body>
 
-</body>
 </html>
