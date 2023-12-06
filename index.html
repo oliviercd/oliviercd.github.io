@@ -1,153 +1,113 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
-  <title>Olivier Chan-Duhon | Engineering & Photography</title>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="./css/grid.css" />
-  <link rel="stylesheet" type="text/css" href="./css/waves.min.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="./js/waves.min.js"></script>
+	<title>Jyumami</title>
+	<style>
+		header {
+			display: flex;
+			align-items: center;
+			background-color: #FFF8EE;
+			padding: 20px;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 24px;
+			margin-left: 20px;
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-right: 20px;
+		}
+
+		nav {
+			margin-left: auto;
+		}
+
+		nav ul {
+			list-style: none;
+			display: flex;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav li {
+			margin-left: 20px;
+		}
+
+		nav li a {
+			color: black;
+			text-decoration: none;
+			font-size: 18px;
+		}
+
+		body {
+			background-color: #FFF8EE;
+			padding: 20px;
+			max-width: 1800px;
+			margin: 0 auto;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -10px;
+		}
+
+		.column {
+			flex: 20%;
+			padding: 10px;
+		}
+
+		.column img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.caption {
+			text-align: center;
+			margin-top: 10px;
+			font-weight: bold;
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <section id="intro" class="parallax">
-        <div id="floating-title">
-            <h2>Olivier Chan-Duhon</h2>
-            <ul>Engineer & Photographer from Montreal</ul>
-        </div>
-    </section>
-    
-    <section id="description">
-        <h1>Hi, my name is Olivier.</h1>
-        <br>
-        I am a Montreal based engineer who enjoys photography, outdoor sports, motorsports, programming and tinkering with electronics.<br>
-        You will find a selection of my favorite photos and videos taken throughout the years stored here on my digital home, enjoy.
-    </section>
-    
-    <section id="albums-intro">
-        Albums
-    </section>
-    
-    <section id="albums">
-        <!-- Start of Grid -->
-        <div class="grid-container">
-            <!-- Row 1 -->
-            <div id="square-padding">
-                <div class="square shadow bg img1">
-                    <div class="darken-container darken darken-b">
-                        <div class="waves-container waves-effect waves-light waves-block">
-                            <script type="text/javascript">
-                            Waves.displayEffect();
-                            </script>
-                            <div class="table">
-                                <div class="table-cell">
-                                    TEST
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="square-padding">
-                <div class="square shadow bg img2">
-                    <div class="darken-container darken darken-r">
-                        <div class="waves-container waves-effect waves-light waves-block">
-                            <script type="text/javascript">
-                            Waves.displayEffect();
-                            </script>
-                            <div class="table">
-                                <div class="table-cell">
-                                    TEST
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="square-padding">
-                <div class="square shadow bg img3">
-                    <div class="darken-container darken darken-y">
-                        <div class="waves-container waves-effect waves-light waves-block">
-                            <script type="text/javascript">
-                            Waves.displayEffect();
-                            </script>
-                            <div class="table">
-                                <div class="table-cell">
-                                    This is a test
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="videos-intro">
-        Videos
-    </section>
-    
-    <section id="videos">
-            <!-- Start of Grid -->
-        <div class="grid-container">
-            <!-- Row 1 -->
-            <div id="square-padding">
-                <div class="square shadow bg img1">
-                    <div class="darken-container darken darken-b">
-                        <div class="waves-container waves-effect waves-light waves-block">
-                            <script type="text/javascript">
-                            Waves.displayEffect();
-                            </script>
-                            <div class="table">
-                                <div class="table-cell">
-                                    TEST
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="square-padding">
-                <div class="square shadow bg img2">
-                    <div class="darken-container darken darken-r">
-                        <div class="waves-container waves-effect waves-light waves-block">
-                            <script type="text/javascript">
-                            Waves.displayEffect();
-                            </script>
-                            <div class="table">
-                                <div class="table-cell">
-                                    TEST
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="square-padding">
-                <div class="square shadow bg img3">
-                    <div class="darken-container darken darken-y">
-                        <div class="waves-container waves-effect waves-light waves-block">
-                            <script type="text/javascript">
-                            Waves.displayEffect();
-                            </script>
-                            <div class="table">
-                                <div class="table-cell">
-                                    This is a test
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="links">
-            LinkedIn Email
-    </section>
-    
+	<header>
+		<img src="https://jyumami.files.wordpress.com/2023/11/img_0032-2.png" alt="Your Image" width="120">
+		<img src="https://jyumami.files.wordpress.com/2023/11/img_0032-text-3.png" alt="Title" width="200">
+		<nav>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Recipes</a></li>
+				<li><a href="#">Travel</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="row" style="padding: 40px;">
+		<div class="column">
+			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-eva-bronzini-6569193-edit.jpg" alt="Your Image">
+			<div class="caption">Warabimochi with kinako (蕨餅)</div>
+		</div>
+		<div class="column">
+			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-karolina-grabowska-4203100-edit.jpg" alt="Your Image">
+			<div class="caption">Hojicha latte (保持茶 ぁって)</div>
+		</div>
+		<div class="column">
+			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-alesia-kozik-7796749-edit.jpg" alt="Your Image">
+			<div class="caption">Matcha red bean latte (抹茶ラテ)</div>
+		</div>
+		<div class="column">
+			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-pnw-production-8250990-edit.jpg" alt="Your Image">
+			<div class="caption">Roasted pork belly (燒肉)</div>
+		</div>
+		<!-- Add more columns here -->
+	</div>
 </body>
-
 </html>
