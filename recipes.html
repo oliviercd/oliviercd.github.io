@@ -6,7 +6,7 @@
 		html {
 			overflow-y: scroll;
 		}
-	
+		
 		header {
 			display: flex;
 			align-items: center;
@@ -54,30 +54,19 @@
 			margin: 0 auto;
 			font-family: 'Montserrat', sans-serif;
 		}
+		
+		p {
+			font-size: 18pt;
+		}
 
-		.row {
-			display: flex;
-			flex-wrap: wrap;
+		.container {
 			margin: 0 -10px;
 		}
 
-		.column {
-			flex: 20%;
-			padding: 10px;
-		}
-
-		.column img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 100%;
-			height: auto;
-		}
-
-		.caption {
-			text-align: center;
-			margin-top: 10px;
-			font-weight: bold;
+		.recipes {
+			width: 400px;
+			/* Center horizontally*/
+			margin: 0 auto;
 		}
 	</style>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -94,24 +83,10 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="row" style="padding: 40px;">
-		<div class="column">
-			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-eva-bronzini-6569193-edit.jpg" alt="Your Image">
-			<div class="caption">Warabimochi with kinako (蕨餅)</div>
+	<div class="container">
+		<div class="recipes">
+			<img src="https://jyumami.files.wordpress.com/2023/12/kyoto-green.png">
 		</div>
-		<div class="column">
-			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-karolina-grabowska-4203100-edit.jpg" alt="Your Image">
-			<div class="caption">Hojicha latte (保持茶 ぁって)</div>
-		</div>
-		<div class="column">
-			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-alesia-kozik-7796749-edit.jpg" alt="Your Image">
-			<div class="caption">Matcha red bean latte (抹茶ラテ)</div>
-		</div>
-		<div class="column">
-			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-pnw-production-8250990-edit.jpg" alt="Your Image">
-			<div class="caption">Roasted pork belly (燒肉)</div>
-		</div>
-		<!-- Add more columns here -->
 	</div>
 </body>
 </html>
