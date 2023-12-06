@@ -1,117 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Jyumami</title>
-	<style>
-		html {
-			overflow-y: scroll;
-		}
-	
-		header {
-			display: flex;
-			align-items: center;
-			background-color: #FFF8EE;
-			padding: 20px;
-		}
-
-		h1 {
-			margin: 0;
-			font-size: 24px;
-			margin-left: 20px;
-		}
-
-		img {
-			max-width: 100%;
-			height: auto;
-			margin-right: 20px;
-		}
-
-		nav {
-			margin-left: auto;
-		}
-
-		nav ul {
-			list-style: none;
-			display: flex;
-			margin: 0;
-			padding: 0;
-		}
-
-		nav li {
-			margin-left: 20px;
-		}
-
-		nav li a {
-			color: black;
-			text-decoration: none;
-			font-size: 18px;
-		}
-
-		body {
-			background-color: #FFF8EE;
-			padding: 20px;
-			max-width: 1800px;
-			margin: 0 auto;
-			font-family: 'Montserrat', sans-serif;
-		}
-
-		.row {
-			display: flex;
-			flex-wrap: wrap;
-			margin: 0 -10px;
-		}
-
-		.column {
-			flex: 20%;
-			padding: 10px;
-		}
-
-		.column img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 100%;
-			height: auto;
-		}
-
-		.caption {
-			text-align: center;
-			margin-top: 10px;
-			font-weight: bold;
-		}
-	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Jyumami</title>
 </head>
+
 <body>
-	<header>
-		<a href="index.html"><img src="https://jyumami.files.wordpress.com/2023/11/img_0032-2.png" alt="Your Image" width="120"></a>
-		<a href="index.html"><img src="https://jyumami.files.wordpress.com/2023/11/img_0032-text-3.png" alt="Title" width="200"></a>
-		<nav>
-			<ul>
-				<li><a href="about.html">About</a></li>
-				<li><a href="recipes.html">Recipes</a></li>
-				<li><a href="travel.html">Travel</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="row" style="padding: 40px;">
-		<div class="column">
-			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-eva-bronzini-6569193-edit.jpg" alt="Your Image">
-			<div class="caption">Warabimochi with kinako (蕨餅)</div>
-		</div>
-		<div class="column">
-			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-karolina-grabowska-4203100-edit.jpg" alt="Your Image">
-			<div class="caption">Hojicha latte (保持茶 ぁって)</div>
-		</div>
-		<div class="column">
-			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-alesia-kozik-7796749-edit.jpg" alt="Your Image">
-			<div class="caption">Matcha red bean latte (抹茶ラテ)</div>
-		</div>
-		<div class="column">
-			<img src="https://jyumami.files.wordpress.com/2023/11/pexels-pnw-production-8250990-edit.jpg" alt="Your Image">
-			<div class="caption">Roasted pork belly (燒肉)</div>
-		</div>
-		<!-- Add more columns here -->
-	</div>
+    <!-- Main container determines width of the page -->
+    <div class="container">
+
+        <!-- Header which remains on page as you scroll -->
+        <div class="header">
+
+            <!-- Jyumami logo and title on the left-->
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png"></a>
+            </div>
+            <div class="title">
+                <a href="index.html"><img src="img/title.png"></a>
+            </div>
+            
+            <!-- About/Recipe/Travel navigation on the right -->
+            <div class="navigation">
+                <nav>
+                    <ul class="horizontal-list">
+                        <li class="list-items">About</li>
+                        <li class="list-items">Recipes</li>
+                        <li class="list-items">Travel</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main content of the page -->
+        <div class="mainbody">
+            <div class="page-title">Kyoto</div>
+
+            <!-- Two column table -->
+            <div class="content">
+                <div class="column">
+                    Column 1
+                </div>
+                <div class="column">
+                    Column 2
+                </div>
+            </div>
+
+            <!-- Three column table -->
+            <div class="content">
+                <div class="column">
+                    Column 1
+                </div>
+                <div class="column">
+                    Column 2
+                </div>
+                <div class="column">
+                    Column 3
+                </div>
+            </div>
+
+            <!-- Four column table -->
+            <div class="content">
+                <div class="column">
+                    Column 1
+                </div>
+                <div class="column">
+                    Column 2
+                </div>
+                <div class="column">
+                    Column 3
+                </div>
+                <div class="column">
+                    <p>Column 4</p>
+                    <p>Column 4</p>
+                    <p>Column 4</p>
+                    <p>Column 4</p>
+                    <div class="overlay">
+                        Test
+                    </div>
+                </div>
+            </div>
+        
+        <!-- End of main content-->
+        </div>
+
+        <!-- Optional footer for social media links -->
+        <div class="footer">Footer</div>
+    </div>
 </body>
+
 </html>
