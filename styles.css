@@ -18,7 +18,7 @@ h1 {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -129,7 +129,7 @@ h1 {
     margin-right: 25%;
     border-radius: 35px;
     background: #000;
-    font-size: 26px;
+    font-size: 30px;
     color: #FFF;
 
 }
@@ -197,5 +197,5 @@ h1 {
 .category-container-green,
 .name,
 .description {
-    /*outline: 1px solid #000;*/
+    outline: 1px solid #000;
 }
