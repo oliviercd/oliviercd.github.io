@@ -4,6 +4,8 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #FFF8EE;
     font-family: 'Jua', sans-serif;
     font-size: 22px;
@@ -18,6 +20,7 @@ h1 {
 }
 
 .container {
+    position: relative;
     max-width: 1200px;
     margin: auto;
 }
@@ -34,23 +37,16 @@ h1 {
     padding: 20px;
 }
 
-.header-container {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    overflow: hidden;
-    height: 500px;
-    margin-bottom: -250px;
-    background: linear-gradient(to bottom, #FFF8EE, rgba(255, 255, 255, 0));
-}
-
 .header-image {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 18%;
     object-fit: cover;
+    background: linear-gradient(to bottom, rgba(255, 248, 238, 1.0), rgba(255, 248, 238, 0.0)), url('img/dsc02327.jpg');
+    background-size: cover;
+    background-position: 50% 70%;
     z-index: -1;
 }
 
@@ -200,6 +196,7 @@ h1 {
 /* Add borders for debugging */
 
 
+.container,
 .column,
 .overlay,
 .header,
@@ -214,5 +211,7 @@ h1 {
 .category-container-green,
 .name,
 .description {
+/*
     outline: 1px solid #000;
+*/
 }
