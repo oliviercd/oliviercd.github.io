@@ -7,6 +7,14 @@ body {
     background-color: #FFF8EE;
     font-family: 'Jua', sans-serif;
     font-size: 22px;
+    text-rendering: optimizeLegibility;
+    image-rendering: smooth;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 0px;
 }
 
 .container {
@@ -89,6 +97,41 @@ body {
     width: 35%;
 }
 
+.category-container {
+    width: 100%;
+    margin-top: 2%;
+    border-radius: 35px;
+}
+
+.category-container {
+    width: 100%;
+    margin-top: 2%;
+    border-radius: 35px;
+}
+
+.category-container-green {
+    width: 100%;
+    margin-top: 2%;
+    border-radius: 35px;
+    background-color: rgb(195, 255, 193);
+}
+
+.category-stay,
+.category-eat,
+.category-shop {
+    text-align: center;
+    padding: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 35px;
+    background: #000;
+    font-size: 26px;
+    color: #FFF;
+
+}
+
 .content {
     display: flex;
     flex-direction: row;
@@ -99,13 +142,14 @@ body {
     position: relative;
     width: 50%;
     padding: 10px;
-    border: 1px solid #000;
+    font-size: 18px;
 }
 .column img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    image-rendering: auto;
 }
 
 .overlay {
@@ -124,10 +168,16 @@ body {
 }
 
 /* Add borders for debugging */
+
 .column,
 .overlay,
 .header,
 .mainbody,
-.footer {
+.footer,
+.page-title,
+.category-stay,
+.category-eat,
+.category-shop,
+.category-container {
     border: 1px solid #000;
 }
