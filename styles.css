@@ -12,9 +12,9 @@ body {
 }
 
 h1 {
+    font-family: 'Jua', sans-serif;
     font-weight: bold;
     font-size: 22px;
-    line-height: 0px;
 }
 
 .container {
@@ -52,7 +52,7 @@ h1 {
 }
 
 .logo img {
-    width: 100%;
+    max-width: 100%;
     min-width: 50px;
     height: auto;
 }
@@ -66,7 +66,7 @@ h1 {
 }
 
 .title img {
-    width: 100%;
+    max-width: 100%;
     min-width: 100px;
     height: auto;
 }
@@ -94,7 +94,9 @@ h1 {
 }
 
 .page-title img {
-    width: 35%;
+    max-width: 35%;
+    min-width: 200px;
+    height: audo;
 }
 
 .category-container {
@@ -103,17 +105,18 @@ h1 {
     border-radius: 35px;
 }
 
-.category-container {
+.category-container,
+.category-container-green {
     width: 100%;
-    margin-top: 2%;
+    margin-top: 3%;
     border-radius: 35px;
+    box-sizing: border-box;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .category-container-green {
-    width: 100%;
-    margin-top: 2%;
-    border-radius: 35px;
-    background-color: rgb(195, 255, 193);
+    background-color: rgb(224, 238, 195);
 }
 
 .category-stay,
@@ -121,7 +124,6 @@ h1 {
 .category-shop {
     text-align: center;
     padding: 20px;
-    margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 25%;
     margin-right: 25%;
@@ -149,7 +151,6 @@ h1 {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-    image-rendering: auto;
 }
 
 .overlay {
@@ -167,6 +168,20 @@ h1 {
     overflow: hidden;
 }
 
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.name img {
+    width: 4%;
+    height: 4%;
+}
+
+.description {
+    font-family: Calibri;
+}
+
 /* Add borders for debugging */
 
 .column,
@@ -178,6 +193,9 @@ h1 {
 .category-stay,
 .category-eat,
 .category-shop,
-.category-container {
-    border: 1px solid #000;
+.category-container,
+.category-container-green,
+.name,
+.description {
+    /*outline: 1px solid #000;*/
 }
