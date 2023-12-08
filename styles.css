@@ -105,6 +105,11 @@ h1 {
     margin-left: 10px;
 }
 
+.list-items a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .page-title {
     text-align: center;
     padding: 20px;
@@ -113,7 +118,22 @@ h1 {
 .page-title img {
     max-width: 35%;
     min-width: 200px;
-    height: audo;
+    height: auto;
+}
+
+.about-container {
+    width: 60%;
+    height: auto;
+    margin-top: 3%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: 'Libre Franklin';
+    font-size: 22px;
+}
+
+.about-container img {
+    max-width: 100%;
+    height: auto;
 }
 
 .category-container,
@@ -190,12 +210,12 @@ h1 {
 }
 
 .description {
-    font-family: Calibri;
+    font-family: Noto Sans;
 }
 
 /* Add borders for debugging */
 
-
+/*
 .container,
 .column,
 .overlay,
@@ -211,7 +231,6 @@ h1 {
 .category-container-green,
 .name,
 .description {
-/*
     outline: 1px solid #000;
-*/
 }
+*/
