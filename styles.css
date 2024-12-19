@@ -21,7 +21,7 @@ h1 {
 
 .container {
     position: relative;
-    max-width: 1200px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -112,7 +112,9 @@ h1 {
 
 .page-title {
     text-align: center;
-    padding: 20px;
+    font-size: 40pt;
+    padding: 40px;
+    padding-top: 80px;
 }
 
 .page-title img {
@@ -172,7 +174,7 @@ h1 {
 
 .column {
     position: relative;
-    width: 50%;
+    width: 100%;
     padding: 10px;
     font-size: 18px;
 }
